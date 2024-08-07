@@ -1,0 +1,128 @@
+<!-- Primer Código Ajustado -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobos-Hub</title>
+    <link rel="stylesheet" href="../Inicio/style_index.css">
+<link rel="stylesheet" href="/Inicio/Login_Registro/login.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="https://via.placeholder.com/150x40" alt="Logo">
+            </div>
+            <div class="search-container">
+                <select>
+                    <option value="all">Categorias</option>
+                    <option value="electronics">Electrónicos</option>
+                    <option value="home">Computo</option>
+                </select>
+                <input type="text" placeholder="Buscar">
+                <button><img src="https://via.placeholder.com/20" alt="Buscar"></button>
+            </div>
+            <div class="account-links">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <a href="#">Carrito</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="#" id="menu-toggle"><i class="fas fa-bars"></i> Menú</a>
+            <a href="#">Vender</a>
+            <a href="#">Los más vendidos</a>
+        </nav>
+    </header>
+    <div class="overlay" id="overlay"></div> 
+    <div id="menu" class="menu">
+        <a href="#" id="menu-close" class="menu-close"><i class="fas fa-times"></i> Cerrar</a>
+        <a href="Login_Registro/login.html">Iniciar sesión</a>
+        <a href="#">Electrónicos</a>
+        <a href="#">Computo</a>
+    </div>
+    <main>
+        <div class="carousel">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <img id="carousel-image" src="../public2.0/assets2.0/img2.0/img_carrucel/D_NQ_640002-MLA74441796692_022024-OO.webp" alt="Carousel Image">
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <section class="categories">
+            <div class="category-box">
+                <h3>Electrónicos</h3>
+                <img src="../public2.0/assets2.0/img2.0/img_categorias/D_NQ_NP_2X_906158-MLU74545519265_022024-F.webp" alt="Electronics">
+            </div>
+            <div class="category-box">
+                <h3>Hogar y Cocina</h3>
+                <img src="../public2.0/assets2.0/img2.0/img_categorias/D_NQ_NP_2X_932345-MLU73048065873_112023-F.webp" alt="Home and Kitchen">
+            </div>
+            <div class="category-box">
+                <h3>Ropa y Accesorios</h3>
+                <img src="../public2.0/assets2.0/img2.0/img_categorias/D_NQ_NP_2X_843133-MLM75556989953_042024-F.webp" alt="Clothing">
+            </div>
+        </section>
+        <section class="offer-section">
+            <h2>Hasta la puerta de tu casa</h2>
+            <p>Sonido vibrante y diseño compacto</p>
+            <p><span>$2,640</span> $2,200</p>
+            <p>Oferta del 3 de junio al 16 de junio</p>
+        </section>
+        <section class="offers-container">
+            <div class="offer-box">
+                <h3>Ofertas en tendencia</h3>
+                <img src="https://via.placeholder.com/150" alt="Galaxy S23">
+                <img src="https://via.placeholder.com/150" alt="TCL TV">
+                <img src="https://via.placeholder.com/150" alt="Laptop">
+                <img src="https://via.placeholder.com/150" alt="Bedroom">
+            </div>
+            <div class="offer-box">
+                <h3>Hasta 20% en Climatización</h3>
+                <img src="https://via.placeholder.com/150" alt="Air Conditioner">
+                <img src="https://via.placeholder.com/150" alt="Fan">
+                <img src="https://via.placeholder.com/150" alt="Kitchen">
+                <img src="https://via.placeholder.com/150" alt="Purifier">
+            </div>
+            <div class="offer-box">
+                <h3>Smartwatches para papá</h3>
+                <img src="https://via.placeholder.com/150" alt="Huawei Watch">
+                <img src="https://via.placeholder.com/150" alt="Amazfit">
+                <img src="https://via.placeholder.com/150" alt="Garmin">
+                <img src="https://via.placeholder.com/150" alt="Samsung">
+            </div>
+        </section>
+        <section class="login-section">
+            <h2>Inicia sesión para vivir tu mejor experiencia</h2>
+            <button onclick="window.location.href='login.html'">Iniciar sesión de forma segura</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cobos-Hub</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            var overlay = document.getElementById('overlay');
+            menu.style.left = '0px';
+            overlay.style.display = 'block';
+        });
+
+        document.getElementById('menu-close').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            var overlay = document.getElementById('overlay');
+            menu.style.left = '-250px';
+            overlay.style.display = 'none';
+        });
+
+        function prevSlide() {
+        }
+
+        function nextSlide() {
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Recuperar contraseña/recuperar.html">
+    <title>CobosHub</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="register.php" method="POST" enctype="multipart/form-data">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon fa-brands fa-google-plus-g"></a>
+                    <a href="#" class="icon fa-brands fa-facebook-f"></a>
+                    <a href="#" class="icon fa-brands fa-github"></a>
+                    <a href="#" class="icon fa-brands fa-linkedin-in"></a>
+                </div>
+                <span>Inicia tu registro</span>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellidoPaterno" placeholder="Apellido paterno" required>
+                <input type="text" name="apellidoMaterno" placeholder="Apellido Materno" required>
+                <input type="email" name="correo" placeholder="Correo" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" required>
+                <input type="file" name="foto" placeholder="Foto">
+                <input type="text" name="usuario" placeholder="Usuario" required>
+                <input type="password" name="contraseña" placeholder="Contraseña" required>
+                <select id="idRolUsuario" name="idRolUsuario" required>
+                    <option value="1">Admin</option>
+                    <option value="2">Cliente</option>
+                </select>
+                <button type="submit">Crear cuenta</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="login.php" method="POST">
+                <h1>Login</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon fa-brands fa-google-plus-g"></a>
+                    <a href="#" class="icon fa-brands fa-facebook-f"></a>
+                    <a href="#" class="icon fa-brands fa-github"></a>
+                    <a href="#" class="icon fa-brands fa-linkedin-in"></a>
+                </div>
+                <span>o puedes iniciar sesión con tu usuario</span>
+                <input type="text" name="usuario" placeholder="Usuario" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <a href="Recuperar contraseña/recuperar.html">Olvidaste tu contraseña?</a>
+                <button type="submit">Inicia sesión</button>
+                <a href="../index.html" id="backButton"> Regresar</a>
+            </form>            
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bienvenido de nuevo!</h1>
+                    <p>
+                        Ingrese sus datos personales para utilizar todas las funciones del sitio</p>
+                    <button class="hidden" id="login">Iniciar sesión</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hola, Bienvenido!</h1>
+                    <p>Regístrese con sus datos personales para utilizar todas las funciones</p>
+                    <button class="hidden
+                    Ingrese sus datos personales para utilizar todas las funciones del sitio" id="register">Registrate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
